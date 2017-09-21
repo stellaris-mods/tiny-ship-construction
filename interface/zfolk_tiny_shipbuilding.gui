@@ -1,0 +1,97 @@
+guiTypes = {
+
+	@build_info_x_pos = 120
+	@planet_view_height = 905
+	@module_width = 540
+	@tile_info_module_width = 328
+	@tile_progress_bar_height = 7
+	@tile_info_x = 128
+	@tile_title_y = 30
+	@title_desc_y = 68
+
+	containerWindowType = {
+		name = "planet_view_spaceport_construction_panel_entry"
+		size = { width = @tile_info_module_width height = 32 }
+
+
+		background = {
+			name = "planet_view_spaceport_construction_panel_entry_background"
+			quadTextureSprite = "GFX_interface_list_light"
+		}
+
+		iconType = {
+			name = "ship_type"
+			position = { x = 4 y = 4 }
+			spriteType = "GFX_ship_class_medium"
+			alwaysTransparent = yes
+			scale = 0.7
+		}
+
+		instantTextBoxType = {
+			name = "name"
+			font = "cg_16b"
+			text = "NAME"
+			position = { x = 30 y = 1 }
+			maxWidth = @tile_info_module_width
+			maxHeight = 20
+			fixedSize = yes
+			format = left
+			orientation = upper_left
+			alwaysTransparent = yes
+			text_color_code = "H"
+		}
+
+		instantTextBoxType = {
+			name = "cost"
+			font = "cg_16b"
+			text = "COST"
+			position = { x = -70 y = 1 }
+			maxWidth = 60
+			maxHeight = 20
+			fixedSize = yes
+			format = right
+			orientation = upper_right
+		}
+
+
+		instantTextBoxType = {
+			name = "type"
+			font = "cg_16b"
+			text = "TYPE"
+			position = { x = 30 y = 14 }
+			maxWidth = 230
+			maxHeight = 20
+			fixedSize = yes
+			format = left
+			orientation = upper_left
+			alwaysTransparent = yes
+			text_color_code = "E"
+		}
+
+		instantTextBoxType = {
+			name = "auto_gen"
+			font = "cg_16b"
+			text = "AUTO_GENERATED_BEST"
+			position = { x = -265 y = 1 }
+			maxWidth = 200
+			maxHeight = 20
+			fixedSize = yes
+			format = right
+			orientation = upper_right
+			alwaystransparent = yes
+			text_color_code = "E"
+		}
+
+		instantTextBoxType = {
+			name = "time"
+			font = "cg_16b"
+			text = "TIME"
+			position = { x = -70 y = 14 }
+			maxWidth = 60
+			maxHeight = 20
+			fixedSize = yes
+			format = right
+			orientation = upper_right
+		}
+	}
+}
