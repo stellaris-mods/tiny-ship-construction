@@ -25,6 +25,7 @@ guiTypes = {
 			spriteType = "GFX_ship_class_medium"
 			alwaysTransparent = yes
 			scale = 0.7
+			tooltip_mode_enabled = yes
 		}
 
 		instantTextBoxType = {
